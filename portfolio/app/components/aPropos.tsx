@@ -34,13 +34,12 @@ function Propos() {
             Bonjour
           </h2>
           <p className="mb-6 sm:mb-8 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-slate-700">
-            Je m&rsquo;appelle <strong>Ambroise Bosch</strong>, développeur web
-            &amp; mobile passionné par l&rsquo;innovation et les défis
-            techniques. J&rsquo;aime concevoir des applications performantes,
-            durables et centrées sur l&rsquo;utilisateur, en combinant
-            créativité, rigueur et sens du détail. Mon objectif : contribuer à
-            des projets qui allient impact technologique et valeur ajoutée
-            réelle pour les entreprises.
+            Je m’appelle <strong>Ambroise Bosch</strong>, développeur web et
+            mobile passionné par l’innovation et les défis techniques. J’aime
+            créer des applications performantes, fiables et centrées sur
+            l’utilisateur, alliant créativité, rigueur et sens du détail. Mon
+            objectif : participer à des projets ambitieux où la technologie
+            apporte une réelle valeur ajoutée.
           </p>
 
           <div
@@ -63,6 +62,15 @@ function Propos() {
               </p>
               <p>
                 <strong>Ville&nbsp;:</strong> Gournay-sur-Marne, Île-de-France
+              </p>
+            </div>
+
+            <div className="space-y-1">
+              <p>
+                <strong>Langues&nbsp;:</strong> Anglais B1
+              </p>
+              <p>
+                <strong>Permis&nbsp;:</strong> Permis B
               </p>
             </div>
           </div>

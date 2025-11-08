@@ -217,7 +217,7 @@ const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="flex flex-col items-center space-y-2 p-2 rounded-lg transition-all duration-300 hover:scale-102 hover:shadow-md hover:bg-white cursor-pointer"
+      className="flex flex-col items-center space-x-2 p-1 rounded-lg transition-all duration-300 hover:scale-102 hover:shadow-md hover:bg-white cursor-pointer"
     >
       <SkillIcon skill={skill} />
       <CircularDeterminate value={skill.value} animated={isHovered} />
@@ -233,9 +233,13 @@ const Competences: React.FC = () => (
       </h2>
       <h1 className="text-3xl md:text-4xl font-bold mb-4">MES COMPÉTENCES</h1>
       <p className="text-lg mb-10 p-2">
-        Mes nombreux projets m&apos;ont permis d&apos;être aujourd&apos;hui
-        autonome, polyvalent et de disposer des compétences techniques dont
-        voici un aperçu :
+        <p className="text-lg p-2">
+          Au cours de deux années de formation intensive en développement web,
+          j&apos;ai acquis de l&apos;expérience sur de nombreux projets
+          concrets, explorant divers langages et technologies. Mon alternance
+          m&apos;a permis de me spécialiser dans les langages modernes et
+          d&apos;approfondir mes compétences techniques.
+        </p>
       </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-16">
