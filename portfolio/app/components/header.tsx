@@ -23,13 +23,14 @@ const itemVariants = {
 
 export default function Header() {
   return (
-    <div className="flex flex-col justify-center text-start text-white h-screen w-full overflow-hidden px-4 sm:px-6 md:px-8">
+    <div className="relative flex flex-col justify-center text-start text-white h-screen w-full overflow-hidden px-4 sm:px-6 md:px-8">
       <Image
         src={pb}
         alt="Photo background"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-center sm:object-cover"
+        sizes="100vw"
       />
 
       <motion.div

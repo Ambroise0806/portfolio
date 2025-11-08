@@ -119,7 +119,7 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col justify-between bg-gray-50">
       <section
         id="contact"
-        className="flex-grow flex flex-col justify-center items-center py-20 px-6 md:px-12"
+        className="flex-grow flex flex-col justify-center items-center py-20 px-4 md:px-12"
       >
         <div className="max-w-3xl w-full">
           <div className="text-center mb-8">

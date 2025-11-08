@@ -21,6 +21,7 @@ import responsive from "../../public/projets/responsive.png";
 import twitter from "../../public/projets/twitter.png";
 import gameImg from "../../public/projets/gameImg.png";
 import chessBetImg from "../../public/projets/chessBetImg.png";
+import skribbl from "../../public/projets/skribbl.png";
 
 type CompetenceId = "FRONT" | "BACK" | "BDD" | "UI_UX" | "GESTION";
 
@@ -50,6 +51,15 @@ const projets: Project[] = [
       "Plateforme de paris en ligne sur des parties d’échecs, développée avec Next.js et Prisma. Gestion des utilisateurs, des mises et des résultats en temps réel grâce à Pusher. Intégration d’une base de données PostgreSQL sur Neon et d’une logique métier complète pour la validation et le suivi des paris.",
     techs: ["Next.js", "Pusher", "Prisma", "Neon"],
     competencies: ["FRONT", "BACK", "BDD"],
+  },
+  {
+    title: "skribbl.io",
+    slug: "skribbl.io",
+    img: skribbl,
+    description:
+      "Jeu en ligne multijoueur de dessin et de devinettes, développé avec Go et React. Comprend un système de salles, de gestion des utilisateurs et de chat en temps réel.",
+    techs: ["Go", "React"],
+    competencies: ["FRONT", "GESTION", "BACK"],
   },
   {
     title: "SpaceShooter",

@@ -51,7 +51,7 @@ export default function Parcours() {
             align: "start",
           }}
           orientation="vertical"
-          className=" max-w-xxl  mx-auto"
+          className=" max-w-xxl  mx-auto p-4"
         >
           <CarouselContent className="-mt-1 h-[600px]">
             {parcours.map((item, index) => (
@@ -64,7 +64,7 @@ export default function Parcours() {
                     className="block"
                   >
                     <Card className="h-[600px]">
-                      <CardContent className="h-[200px]">
+                      <CardContent className="h-full flex flex-col">
                         <Image
                           src={item.img}
                           alt={item.title}
@@ -75,9 +75,11 @@ export default function Parcours() {
                         <h2 className="text-2xl font-semibold mb-2">
                           {item.title}
                         </h2>
-                        <p className="text-lg text-muted-foreground">
-                          {item.description}
-                        </p>
+                        <div className="flex-1 overflow-y-auto">
+                          <p className="text-lg text-muted-foreground">
+                            {item.description}
+                          </p>
+                        </div>
                       </CardContent>
                     </Card>
                   </a>

@@ -232,7 +232,7 @@ const Competences: React.FC = () => (
         Ce que je sais faire
       </h2>
       <h1 className="text-3xl md:text-4xl font-bold mb-4">MES COMPÉTENCES</h1>
-      <p className="text-lg mb-10">
+      <p className="text-lg mb-10 p-2">
         Mes nombreux projets m&apos;ont permis d&apos;être aujourd&apos;hui
         autonome, polyvalent et de disposer des compétences techniques dont
         voici un aperçu :
