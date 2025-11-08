@@ -71,6 +71,7 @@ export default function Parcours() {
                           className="w-full h-80 object-cover rounded-md mb-4"
                           width={item.img.width}
                           height={item.img.height}
+                          priority
                         />
                       </a>
                       <h2 className="text-2xl font-semibold mb-2">

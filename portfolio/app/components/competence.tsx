@@ -16,12 +16,16 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import goLogo from "../../public/logos/go-logo.svg";
+import phaserLogo from "../../public/logos/phaser-logo.png";
+import nextLogo from "../../public/logos/nextjs-logo.svg";
+import Image from "next/image";
 
 const PrismaSvg = (
   <svg
     viewBox="-10 0 48 24"
     xmlns="http://www.w3.org/2000/svg"
-    className="w-12 h-auto fill-current"
+    className="w-12 h-auto fill-current ml-3"
   >
     <path
       fillRule="evenodd"
@@ -35,36 +39,10 @@ const TailwindSvg = (
   <svg
     viewBox="-5 0 48 24"
     xmlns="http://www.w3.org/2000/svg"
-    className="w-12 h-auto fill-current"
+    className="w-12 h-auto fill-current ml-2"
   >
     <path d="M17.183 0C12.6 0 9.737 2.291 8.59 6.873c1.719-2.29 3.723-3.15 6.014-2.577 1.307.326 2.242 1.274 3.275 2.324 1.685 1.71 3.635 3.689 7.894 3.689 4.582 0 7.445-2.291 8.591-6.872-1.718 2.29-3.723 3.15-6.013 2.576-1.308-.326-2.243-1.274-3.276-2.324C23.39 1.98 21.44 0 17.183 0ZM8.59 10.309C4.01 10.309 1.145 12.6 0 17.182c1.718-2.291 3.723-3.15 6.013-2.577 1.308.326 2.243 1.274 3.276 2.324 1.685 1.71 3.635 3.689 7.894 3.689 4.582 0 7.445-2.29 8.59-6.872-1.718 2.29-3.722 3.15-6.013 2.577-1.307-.327-2.242-1.276-3.276-2.325-1.684-1.71-3.634-3.689-7.893-3.689Z" />
   </svg>
-);
-
-const GoImg = (
-  <img
-    src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Black.svg"
-    alt="Go"
-    className="w-12 h-auto"
-  />
-);
-
-const PhaserImg = (
-  <img
-    src="https://cdn.phaser.io/images/img.png"
-    alt="Phaser"
-    className="w-12 h-auto"
-    loading="lazy"
-    decoding="async"
-  />
-);
-
-const NextImg = (
-  <img
-    src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
-    alt="Next.js"
-    className="w-10 h-auto"
-  />
 );
 
 type SkillFA = {
@@ -121,7 +99,19 @@ const SkillIcon: React.FC<{ skill: Skill }> = ({ skill }) => {
 };
 
 const skills: Skill[] = [
-  { type: "img", img: NextImg, value: 100, label: "Next.js" },
+  {
+    type: "img",
+    img: (
+      <Image
+        src={nextLogo}
+        alt="Next.js"
+        className="w-8 h-auto ml-2"
+        priority
+      />
+    ),
+    value: 100,
+    label: "Next.js",
+  },
   {
     type: "fa",
     icon: faHtml5,
@@ -192,8 +182,20 @@ const skills: Skill[] = [
     value: 60,
     label: "Python",
   },
-  { type: "img", img: GoImg, value: 50, label: "Go" },
-  { type: "img", img: PhaserImg, value: 50, label: "Phaser" },
+  {
+    type: "img",
+    img: <Image src={goLogo} alt="Go" className="w-12 h-auto" priority />,
+    value: 50,
+    label: "Go",
+  },
+  {
+    type: "img",
+    img: (
+      <Image src={phaserLogo} alt="Phaser" className="w-12 h-auto" priority />
+    ),
+    value: 50,
+    label: "Phaser",
+  },
   {
     type: "fa",
     icon: faJava,

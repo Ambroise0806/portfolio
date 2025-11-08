@@ -196,7 +196,7 @@ export default function Projets() {
                         width={800}
                         height={480}
                         className="w-full h-64 object-contain"
-                        priority={false}
+                        priority
                       />
                       <p className="text-base text-muted-foreground mt-2">
                         {proj.description}
