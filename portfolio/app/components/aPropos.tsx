@@ -27,6 +27,9 @@ function Propos() {
           alt="Photo de profil d'Ambroise Bosch"
           className="h-48 w-48 sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 rounded-full object-cover shadow-2xl flex-shrink-0"
           priority
+          placeholder="blur"
+          sizes="(max-width: 640px) 192px, (max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+          quality={85}
         />
 
         <section className="w-full max-w-2xl text-center md:text-left">

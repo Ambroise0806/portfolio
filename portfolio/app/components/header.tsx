@@ -31,6 +31,7 @@ export default function Header() {
         priority
         className="object-cover object-center sm:object-cover"
         sizes="100vw"
+        placeholder="blur"
       />
 
       <motion.div

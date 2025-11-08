@@ -106,7 +106,8 @@ const skills: Skill[] = [
         src={nextLogo}
         alt="Next.js"
         className="w-8 h-auto ml-2"
-        priority
+        sizes="32px"
+        loading="lazy"
       />
     ),
     value: 100,
@@ -184,14 +185,29 @@ const skills: Skill[] = [
   },
   {
     type: "img",
-    img: <Image src={goLogo} alt="Go" className="w-12 h-auto" priority />,
+    img: (
+      <Image
+        src={goLogo}
+        alt="Go"
+        className="w-12 h-auto"
+        sizes="48px"
+        loading="lazy"
+      />
+    ),
     value: 50,
     label: "Go",
   },
   {
     type: "img",
     img: (
-      <Image src={phaserLogo} alt="Phaser" className="w-12 h-auto" priority />
+      <Image
+        src={phaserLogo}
+        alt="Phaser"
+        className="w-12 h-auto"
+        placeholder="blur"
+        sizes="48px"
+        loading="lazy"
+      />
     ),
     value: 50,
     label: "Phaser",
@@ -235,13 +251,11 @@ const Competences: React.FC = () => (
       </h2>
       <h1 className="text-3xl md:text-4xl font-bold mb-4">MES COMPÉTENCES</h1>
       <p className="text-lg mb-10 p-2">
-        <p className="text-lg p-2">
-          Au cours de deux années de formation intensive en développement web,
-          j&apos;ai acquis de l&apos;expérience sur de nombreux projets
-          concrets, explorant divers langages et technologies. Mon alternance
-          m&apos;a permis de me spécialiser dans les langages modernes et
-          d&apos;approfondir mes compétences techniques.
-        </p>
+        Au cours de deux années de formation intensive en développement web,
+        j&apos;ai acquis de l&apos;expérience sur de nombreux projets
+        concrets, explorant divers langages et technologies. Mon alternance
+        m&apos;a permis de me spécialiser dans les langages modernes et
+        d&apos;approfondir mes compétences techniques.
       </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-16">
