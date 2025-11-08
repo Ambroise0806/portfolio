@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import pb from "@/public/background.png";
+import pb from "@/public/background_2.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
